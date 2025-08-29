@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/login.css">
+
+  <script defer src="./js/login.js"></script>
+  <link rel="shortcut icon" href="./images/login/icone.png" type="image/x-icon">
+  <title>PenseAI</title>
+</head>
+
+<body>
+
+  <!-- Card Missão fixo no canto -->
+<div class="mission-float" id="missionFloat" role="region" aria-label="Missão do jogo">
+  <div class="mission-float__content">
+    <button class="mission-float__close" id="missionClose" aria-label="Fechar">×</button>
+    <h3>🚀 Missão: Resgatar o Joe</h3>
+    <p>Após sua nave quebrar, Joe se perdeu em algum lugar no espaço sideral. 🌌</p>
+    <p>Ajude-o a voltar para casa vencendo os <strong>4 desafios</strong> de pensamento computacional:</p>
+    <p>Cada fase concluída aproxima Joe da Terra. 🌍</p> 
+    <div class="mission-float__footer">
+      <button class="mission-float__ok" id="missionOk">Entendi</button>
+    </div>
+  </div>
+</div>
+
+<!-- Botão para reabrir -->
+<button class="mission-float__toggle" id="missionToggle" title="Mostrar missão" aria-expanded="true">ℹ️</button>
+
+  <form class="login-form">
+
+    <div class="login__header">
+      <img src="./images/login/logo.png" alt="logo">
+      <img src="./images/login/texto-logo.png" alt="robo icon">
+    </div>
+
+  
+
+    <div style="text-align:center; margin-top: 1pxpx;">
+    
+      <ul style="list-style: none; padding: 0;">
+        <li><a id="link-reconhecimento" href="pages/reconhecimento.html" style="display: inline-block; margin: 10px; padding: 10px 20px; background: #007BFF; color: white; text-decoration: none; border-radius: 5px;">Decifre os Céus</a></li>
+        <li><a id="link-decomposicao" href="pages/decomposicao.html" style="display: inline-block; margin: 10px; padding: 10px 20px; background: #28a745; color: white; text-decoration: none; border-radius: 5px;">Mapa Estilhaçado</a></li>
+        <li><a id="link-abstracao" href="pages/abstracao.html" style="display: inline-block; margin: 10px; padding: 10px 20px; background: #17a2b8; color: white; text-decoration: none; border-radius: 5px;">Engrenagens do Sistema</a></li>
+        <li><a id="link-algoritmo" href="pages/algoritmo.html" style="display: inline-block; margin: 10px; padding: 10px 20px; background: #fd7e14; color: white; text-decoration: none; border-radius: 5px;">Programe sua Salvação</a></li>
+      </ul>
+    </div>
+
+  </form>
+  
+
+  <script defer src="./js/menu.js"></script>
+</body>
+
+</html>

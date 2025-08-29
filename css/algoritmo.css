@@ -1,0 +1,91 @@
+
+body { 
+    font-family: sans-serif;
+    text-align: center;
+    font-family: system-ui, Arial, sans-serif; 
+    background-image: url('../images/algoritmos/fundo-algoritmo.jpg');
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+    color: #FFFFFF;
+}
+h1 { text-align: center; margin: 16px 0; }
+p {
+  color: white;
+  margin-bottom: 10px;
+  font-family:monospace;
+  font-size: 20px;
+}
+
+
+.tabuleiro {
+  display: grid;
+  gap: 8px;
+  justify-content: center;
+  background: transparent;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+  margin: 0 auto 12px auto;
+}
+
+
+.celula {
+  width: 56px; height: 56px;
+  background: #f9fafb; border-radius: 8px;
+  display: grid; place-items: center; font-size: 22px;
+  position: relative; overflow: hidden;
+}
+
+.celula.objetivo { background:#eaffaf; box-shadow: inset 0 0 0 2px #06b6d4; }
+.celula.obstaculo { background:#c8a1a1; box-shadow: inset 0 0 0 2px #ef4444; }
+
+
+.celula.trilha::after {
+  content:""; position:absolute; inset:4px; border-radius:6px;
+  background: rgba(56,189,248,.18);
+}
+
+
+.nave-img { width: 44px; height: 44px; user-select:none; pointer-events:none; }
+
+/* Painel de controle */
+.painel-controle { text-align:center; margin: 10px 0; }
+.painel-controle button {
+  padding:8px 10px; border-radius:8px; border:1px solid #ccc; background:#fff; cursor:pointer;
+  margin: 2px;
+}
+.painel-controle button:active { transform: translateY(1px); }
+
+/* Info */
+#comandos { text-align:center; margin: 6px 0; }
+.mensagem { text-align:center; min-height: 24px; font-weight: 700; }
+.mensagem.err { color:#dc2626; }
+.mensagem.ok { color:#16a34a; }
+
+.titulo-fase {
+  text-align: center;
+  margin: 20px auto 30px auto;
+  max-width: 720px;
+  color:#FFFFFF;
+}
+
+.titulo-principal {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff; 
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff; 
+  line-height: 1.4;
+}
+
+
+

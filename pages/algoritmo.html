@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Programe sua Salvação</title>
+    <link rel="stylesheet" href="../css/algoritmo.css">
+</head>
+<body>
+  <body>
+  <header class="titulo-fase">
+    <h1 class="titulo-principal">🚀 Programe sua Salvação!</h1>
+    <p class="subtitulo">Guie Joe e sua nave pelos obstáculos e leve-os de volta ao lar. 🌌</p>
+  </header>
+
+  <div class="tabuleiro" id="tabuleiro"></div>
+
+  <div class="painel-controle">
+    <button onclick="adicionarComando('cima')">⬆️</button>
+    <button onclick="adicionarComando('baixo')">⬇️</button>
+    <button onclick="adicionarComando('esquerda')">⬅️</button>
+    <button onclick="adicionarComando('direita')">➡️</button>
+    <button onclick="executarComandos()">Executar</button>
+    <button onclick="limparComandos()">Limpar</button>
+    <button class="btn-novo-mapa" onclick="novoMapa()">🔀 Novo mapa</button>
+  </div>
+
+  <p id="comandos"></p>
+  <p id="mensagem" class="mensagem"></p>
+
+  <script src="../js/algoritmo.js"></script>
+
+  <div style="margin-top: 20px; text-align:center;">
+    <a href="../index.html" style="text-decoration: none; background: #333; color: white; padding: 10px 20px; border-radius: 5px;">⬅️ Voltar ao Menu</a>
+  </div>
+</body>
+
+</body>
+</html>

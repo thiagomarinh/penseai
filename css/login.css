@@ -1,0 +1,129 @@
+.login-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+    background-image: url('../images/login/fundo-login.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+.login__header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login__header img {
+  width: 250px;
+}
+
+.login__header h1 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.login__input {
+  border: 2px solid #333;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 15px;
+  max-width: 300px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.login__button {
+  background-color: #00b5cc;
+  border: 3px solid #b2df28;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  max-width: 300px;
+  padding: 15px;
+  width: 100%;
+}
+
+.login__button:disabled {
+  background-color: #eee;
+  border: 2px solid #969595;
+  color: #aaa;
+  cursor: auto;
+}
+
+
+.mission-float {
+  position: fixed;
+  bottom: 20px; right: 20px;
+  width: min(360px, 92vw);
+  background: #0f172a;
+  color: #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.3);
+  overflow: hidden;
+  opacity: 0; pointer-events: none;
+  transform: translateY(10px) scale(.97);
+  transition: opacity .25s ease, transform .25s ease;
+  z-index: 999;
+}
+
+.mission-float.is-open {
+  opacity: 1; pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.mission-float__content { padding: 16px 18px 12px 18px; }
+
+.mission-float h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: #38bdf8;
+}
+
+.mission-float ul { margin: 8px 0 10px 18px; }
+.mission-float li { margin: 4px 0; }
+
+.mission-float__footer {
+  display: flex; justify-content: flex-end; margin-top: 10px;
+}
+
+.mission-float__ok {
+  background: linear-gradient(90deg,#22c55e,#16a34a);
+  border: 0; color: #0b141a; font-weight: 700;
+  padding: 8px 14px; border-radius: 10px; cursor: pointer;
+}
+.mission-float__ok:active { transform: translateY(1px) scale(.99); }
+
+
+.mission-float__close {
+  position: absolute; top: 8px; right: 8px;
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 0; cursor: pointer; font-size: 18px;
+  background: rgba(255,255,255,.1); color: #e5e7eb;
+}
+
+
+.mission-float__toggle {
+  position: fixed; bottom: 20px; right: 20px;
+  width: 42px; height: 42px; border-radius: 999px;
+  border: 0; cursor: pointer; font-size: 20px;
+  background: rgba(255,255,255,.9);
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  z-index: 998;
+  transition: transform .15s, box-shadow .2s;
+}
+.mission-float__toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.2);
+}
+
+.mission-float.is-open ~ .mission-float__toggle {
+  display: none;
+}
