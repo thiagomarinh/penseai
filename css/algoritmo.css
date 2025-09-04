@@ -87,5 +87,51 @@ p {
   line-height: 1.4;
 }
 
+/* Caixinha de quantidade ao lado do Executar */
+.painel-controle { 
+  display:flex; 
+  gap:10px; align-items:center; 
+  flex-wrap:wrap; 
+  justify-content: center;
+}
 
+.btn-dir {
+  padding: 8px 12px;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  background: #1f2937;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+.btn-dir.ativo {
+  outline: 2px solid #6366f1; /* destaque quando selecionado */
+  background: #111827;
+}
 
+.qtd-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 8px;
+}
+.qtd-box label {
+  color: #e5e7eb;
+  font-size: 12px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+#qtdPassos {
+  width: 70px;
+  padding: 6px 8px;
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+#qtdPassos:focus { outline: none; border-color: #6366f1; }
+
+#mensagem.ok { color: #10b981; font-weight: 600; }
+#mensagem.err { color: #ef4444; font-weight: 600; }

@@ -43,3 +43,68 @@ p {
 .tile.dragging{ opacity:.85; outline:3px dashed #22d3ee; }
 .tile.over{ outline:3px solid #22d3ee; }
 
+.puzzle-wrapper{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  justify-content:center;
+  margin: 0 auto 24px;
+}
+
+
+.puzzle-wrapper .puzzle-container{
+  margin:12px 0 24px;
+}
+
+
+.puzzle-ref{
+  order:-1;
+  width: 400px;
+  max-width: 30vw;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+
+.puzzle-ref figure{
+  margin:0;
+}
+.puzzle-ref img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
+.puzzle-ref figcaption{
+  font-size:.95rem;
+  color:#333;
+  text-align:center;
+  background:#fff;
+  padding:6px 8px;
+  border-radius:8px;
+  border:1px solid #e5e7eb;
+}
+
+@media (max-width: 900px){
+  .puzzle-wrapper{
+    flex-direction:column;
+    align-items:center;
+  }
+  .puzzle-ref{
+    width: min(320px, 90vw);
+    max-width: unset;
+  }
+  .puzzle-wrapper .puzzle-container{
+    width: min(90vw, 600px);
+    height: auto;                 
+    aspect-ratio: 1 / 1;          
+  }
+}
+
+#status{
+  color:#16a34a;
+}
+
+

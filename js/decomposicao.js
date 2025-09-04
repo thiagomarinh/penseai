@@ -1,5 +1,5 @@
 
-const GRID = 4;
+const GRID =4;
 const IMAGE_SRC = "../images/puzzle/quebra.jpg";
 
 const container = document.getElementById("puzzle");
